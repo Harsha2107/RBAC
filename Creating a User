@@ -1,7 +1,7 @@
 mkdir harsha-user && cd harsha-user
-openssl genrsa -out mustafa.key 2048
-openssl req -new -key mustafa.key -out mustafa.csr -subj "/CN=mustafa/O=group1"
-openssl x509 -req -in mustafa.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out mustafa.crt -days 500
+openssl genrsa -out harsha.key 2048
+openssl req -new -key harsha.key -out harsha.csr -subj "/CN=harsha/O=group1"
+openssl x509 -req -in harsha.csr -CA ~/.minikube/ca.crt -CAkey ~/.minikube/ca.key -CAcreateserial -out harsha.crt -days 500
 kubectl config set-credentials harsha --client-certificate=harsha.crt --client-key=harsha.key
 // Creating a context
 kubectl config set-context my-context --cluster=minikube --user=harsha
