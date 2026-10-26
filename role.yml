@@ -5,9 +5,9 @@ metadata:
   name: dev-role
   namespace: dev
 rules:
-  - apiGroups: [" "]
+  - apiGroups: [""]
     resources: ["pods"]
     verbs: ["get","list", "create", "watch"]
-  - apiGroups: [" "]
+  - apiGroups: [""]
     resources: ["services"]
     verbs: ["get","list", "watch"]
