@@ -6,4 +6,9 @@ metadata:
   namespace: dev
 subjects:
   - kind: User
-    name: 
+    name: harsha
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: dev-role
+  apiGroup: rbac.authorization.k8s.io
